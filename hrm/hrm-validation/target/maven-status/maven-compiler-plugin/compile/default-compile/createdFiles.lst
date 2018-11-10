@@ -1,0 +1,5 @@
+com\jarvis\hrm\ValidationError.class
+com\jarvis\hrm\IAnnotationValidator.class
+com\jarvis\hrm\AnnotationValidatorImpl.class
+com\jarvis\hrm\LoginValidationBean.class
+com\jarvis\hrm\BaseBean.class

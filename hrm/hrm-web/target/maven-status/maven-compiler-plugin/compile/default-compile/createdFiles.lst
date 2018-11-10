@@ -1,0 +1,11 @@
+com\jarvis\hrm\common\CdiScopeMetadataResolver$scopeNames.class
+com\jarvis\hrm\formbean\BaseBean.class
+com\jarvis\hrm\controller\BaseController.class
+com\jarvis\hrm\validation\LoginValidationAdapter.class
+com\jarvis\hrm\common\CdiScopeMetadataResolver.class
+com\jarvis\hrm\formbean\LoginBean.class
+com\jarvis\hrm\util\MessageUtils.class
+com\jarvis\hrm\model\LoginModel.class
+com\jarvis\hrm\validation\ValidationAdapter.class
+com\jarvis\hrm\controller\LoginController.class
+com\jarvis\hrm\formbean\ValidationErrorBean.class

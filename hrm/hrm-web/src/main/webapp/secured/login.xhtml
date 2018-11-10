@@ -1,0 +1,51 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" 
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:ui="http://java.sun.com/jsf/facelets" xmlns:f="http://java.sun.com/jsf/core" xmlns:a4j="http://richfaces.org/a4j"
+	xmlns:rich="http://richfaces.org/rich">
+    <head>
+            <meta charset="utf-8"/> 
+            <title>Jarvis HRM orange Tool</title>
+            <link href="../resources/css/bootstrap.css" type="text/css" rel="stylesheet" />
+			<link href="../resources/css/bootstrap.datatable.css" type="text/css" rel="stylesheet" />
+			<link href="../resources/css/main.css" type="text/css" rel="stylesheet" />
+            <script type="text/javascript" src="../resources/js/jquery.js"></script>
+            <script type="text/javascript" src="../resources/js/bootstrap.js"></script>
+            <script type="text/javascript" src="../resources/js/jquery.dataTables.min.js"></script>
+            <script type="text/javascript" src="../resources/js/dataTables.bootstrap.min.js"></script>
+            <script type="text/javascript" src="../resources/js/pagesJs/login.js"></script>
+            <script type="text/javascript" src="../resources/js/pagesJs/employeelist.js"></script>
+    </head>
+    <body>  
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-12 loginheader"></div>
+                <div class="col-md-7 loginbg" id="loginImage">
+                 </div>
+                 <div class="col-md-5" id="loginform">
+                       <div>
+                           <img src="../resources/images/logo.png" alt="jarvisLogo" class="img-responsive login-logo-center"/>
+                       </div>
+                       <h:form id="loginform" styleClass="form-horizontal">
+                             <div class="form-group">
+                               <label class="col-md-4 control-label" for="email">Email</label>  
+                               <div class="col-md-6">
+                               		<h:inputText value="#{loginModel.loginBean.emailId}" maxlength="64" id="emailId" placeholder="Username" styleClass="form-control input-md"/>
+                               		<h:message for="loginform:emailId" id="msgEmailId" styleClass="error"></h:message>
+                               </div>
+                             </div>
+                             <div class="form-group">
+                               <label class="col-md-4 control-label" for="password">Password</label>
+                               <div class="col-md-6">
+                               	 <h:inputSecret id="password" value="#{loginModel.loginBean.password}" maxlength="32" styleClass="form-control input-md" />	
+                               	 <h:message for="loginform:password" id="msgPassword" styleClass="error"></h:message>
+                               </div>
+                             </div>   
+                              <!-- Button -->
+                              	<h:commandButton styleClass="btn btn-second mrgn-right15" value="Login" id="lngbtn" action="#{loginController.login}" />
+                        </h:form>
+                 </div>
+            </div>
+        </div>
+    </body>
+</html>

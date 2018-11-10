@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>com.jarvis.hrm</groupId>
+  <artifactId>hrm</artifactId>
+  <packaging>pom</packaging>
+  <version>1.0-SNAPSHOT</version>
+  <name>hrm</name>
+  <properties>
+  	<org.springframework.version>4.3.2.RELEASE</org.springframework.version>
+	<org.hibernate.version>3.3.2.GA</org.hibernate.version>
+  </properties>
+  <build>
+  	<pluginManagement>
+			<plugins>
+				<plugin>
+					<groupId>org.apache.maven.plugins</groupId>
+					<artifactId>maven-compiler-plugin</artifactId>
+					<configuration>
+						<source>1.8</source>
+						<target>1.8</target>
+						<encoding>Cp1252</encoding>
+					</configuration>
+				</plugin>
+			</plugins>
+	</pluginManagement>
+  </build>
+  <dependencies>
+    <dependency>
+			<groupId>junit</groupId>
+			<artifactId>junit</artifactId>
+			<version>4.11</version>
+			<scope>test</scope>
+		</dependency>
+  </dependencies>
+  <modules>
+    <module>hrm-model</module>
+	<module>hrm-validation</module>
+	<module>hrm-dao</module>
+	<module>hrm-service</module>
+    <module>hrm-web</module>
+  </modules>
+</project>
